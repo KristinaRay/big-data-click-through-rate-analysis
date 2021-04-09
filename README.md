@@ -27,6 +27,7 @@
 /result/test
 
 /result/validate
+
 С наборами данных в следующем соотношении train/test/validate = 0.5/0.25/0.25 (randomSplit).
 Где в каждой папке должен находиться parquet-файл (число партиций не принципиально) со следующей структурой данных:
 
@@ -51,9 +52,9 @@ maxIter=40, regParam=0.4, elasticNetParam=0.8
 1) PySparkMLFit.py - задача, которая должна тренировать модель, подбирать оптимальные гиперпараметры на входящих данных, сохранять ее и производить оценку качества модели, используя RegressionEvaluator и выводя в консоль RMSE модели на основе test датасета.
 Варианты запуска задачи:
 
-spark-submit PySparkMLFit.py train.parquet test.parquet
+`spark-submit PySparkMLFit.py train.parquet test.parquet`
 #или
-python PySparkMLFit.py train.parquet test.parquet
+`python PySparkMLFit.py train.parquet test.parquet`
 где:
 * train.parquet - путь к датасету, который необходимо использовать для обучения (скачать)
 * test.parquet - путь к датасету, который необходимо использовать для оценки полученной модели (скачать)
@@ -61,9 +62,9 @@ python PySparkMLFit.py train.parquet test.parquet
 2) PySparkMLPredict.py - задача, которая должна загружать модель и строить предсказание над переданными ей данными.
 Варианты запуска задачи:
 
-spark-submit PySparkMLPredict.py test.parquet result
+`spark-submit PySparkMLPredict.py test.parquet result`
 #или
-python PySparkMLPredict.py test.parquet result
+`python PySparkMLPredict.py test.parquet result`
 где:
 * test.parquet - путь к датасету, на основе данных которого нужно выполнить предсказания CTR (скачать)
 * result - путь, по которому будет сохранен результат предсказаний в формате CSV следующего вида [ad_id, prediction]
