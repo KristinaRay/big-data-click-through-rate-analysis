@@ -22,11 +22,11 @@
 `python PySparkJob.py clickstream.parquet result`
 Вы должны прочитать указанный в параметрах файл, обработать его и получить структуру папок вида:
 
-`/result/train
+/result/train
 
 /result/test
 
-/result/validate`
+/result/validate
 С наборами данных в следующем соотношении train/test/validate = 0.5/0.25/0.25 (randomSplit).
 Где в каждой папке должен находиться parquet-файл (число партиций не принципиально) со следующей структурой данных:
 
