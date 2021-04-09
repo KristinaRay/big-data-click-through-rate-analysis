@@ -30,21 +30,21 @@ python PySparkJob.py clickstream.parquet result
 
 | Имя колонки	| Тип колонки	| Описание |
 | ----------- | ----------- | -------- |
-|ad_id | integer |	id рекламного объявления
+|ad_id | integer |	id рекламного объявления|
 
-target_audience_count	| decimal	| размер аудитории, на которую таргетируется объявление
+|target_audience_count	| decimal	| размер аудитории, на которую таргетируется объявление|
 
-has_video	| integer |	1 если есть видео, иначе 0
+|has_video	| integer |	1 если есть видео, иначе 0|
 
-is_cpm	| integer	| 1 если тип объявления CPM, иначе 0
+|is_cpm	| integer	| 1 если тип объявления CPM, иначе 0|
 
-is_cpc |	integer	| 1 если тип объявления CPC, иначе 0
+|is_cpc |	integer	| 1 если тип объявления CPC, иначе 0|
 
-ad_cost	| double | стоимость объявления в рублях
+|ad_cost	| double | стоимость объявления в рублях|
 
-day_count	| integer	| Число дней, которое показывалась реклама
+|day_count	| integer	| Число дней, которое показывалась реклама|
 
-CTR	| double |	Отношение числа кликов к числу просмотров
+|CTR	| double |	Отношение числа кликов к числу просмотров|
 
 ### Week 3 Задачи ML Engineering
 
