@@ -74,3 +74,4 @@ python PySparkMLPredict.py test.parquet result
 * result - путь, по которому будет сохранен результат предсказаний в формате CSV следующего вида [ad_id, prediction]
 
 Пожалуйста, используйте Pipeline.
+
