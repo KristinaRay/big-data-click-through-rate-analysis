@@ -16,10 +16,10 @@
 
 В результате выполнения задачи, например, выполнив команду:
 
-spark-submit PySparkJob.py clickstream.parquet result
+`spark-submit PySparkJob.py clickstream.parquet result`
 или 
 
-python PySparkJob.py clickstream.parquet result
+`python PySparkJob.py clickstream.parquet result`
 Вы должны прочитать указанный в параметрах файл, обработать его и получить структуру папок вида:
 
 /result/train
@@ -32,7 +32,7 @@ python PySparkJob.py clickstream.parquet result
 | ----------- | ----------- | -------- |
 |ad_id | integer |	id рекламного объявления|
 
-|target_audience_count	| decimal	| размер аудитории, на которую таргетируется объявление|
+| target_audience_count	| decimal	| размер аудитории, на которую таргетируется объявление |
 
 |has_video	| integer |	1 если есть видео, иначе 0|
 
